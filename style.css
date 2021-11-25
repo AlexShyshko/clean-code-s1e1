@@ -17,7 +17,7 @@ body {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .matrix-description {
     text-align: center;
   }
@@ -40,10 +40,10 @@ ul {
   padding: 0px;
 }
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 input,button{
-  outline:none;
+  outline: none;
 }
 button {
   background: none;
@@ -134,16 +134,16 @@ button:hover {
 /* Edit Task */
 #incomplete-tasks .list-paragraph .input-text,
 #completed-tasks .list-paragraph .input-text {
-  display:none
+  display: none
 }
 
 #incomplete-tasks .list-paragraph.edit-mode .input-text,
 #completed-tasks .list-paragraph.edit-mode .input-text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 #incomplete-tasks .list-paragraph.edit-mode .label-task,
 #completed-tasks .list-paragraph.edit-mode .label-task {
-  display:none;
+  display: none;
 }
