@@ -1,5 +1,5 @@
 /* Basic Style */
-.body {
+body {
   background-color: #f8f8f8;
   color: #333;
   font-family: lato, sans-serif;
@@ -68,7 +68,7 @@ button:hover {
   display: block;
   margin: 0 0 20px;
 }
-input[type="text"] {
+.input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -80,17 +80,17 @@ input[type="text"] {
   font-family: lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.input-text:focus {
   color: #333;
 }
 
 /* New Task */
-input#new-task {
+#new-task {
   width: 318px;
 }
 
 /* Task list */
-li {
+.list-paragraph {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -99,47 +99,50 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.list-paragraph > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.list-paragraph > .input-checkbox {
   margin: 0 10px;
 }
-li > label {
+.list-paragraph > .label-task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+.list-paragraph >    .input-text {
   width: 226px
 }
-button.delete img {
+.button-delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.button-delete-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks .label-task {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+#incomplete-tasks .list-paragraph .input-text,
+#completed-tasks .list-paragraph .input-text {
   display:none
 }
 
-ul li.edit-mode input[type=text] {
+#incomplete-tasks .list-paragraph.edit-mode .input-text,
+#completed-tasks .list-paragraph.edit-mode .input-text {
   display:inline-block;
   width:224px
 }
 
-ul li.edit-mode label {
+#incomplete-tasks .list-paragraph.edit-mode .label-task,
+#completed-tasks .list-paragraph.edit-mode .label-task {
   display:none;
 }
