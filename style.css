@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.matrix-img {
+.matrix-description__img {
   width: 100%;
 }
-.matrix-description .more-inf {
+.matrix-description__more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -27,12 +27,13 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
+.add-item-section__task,
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.add-item-section__task-row-wrapper {
   display: flex;
 }
 ul {
@@ -61,7 +62,7 @@ button:hover {
 }
 /* Heading */
 .header-tasks,
-.new-task-label {
+.add-item-section__new-task-label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -71,7 +72,7 @@ button:hover {
   display: block;
   margin: 0 0 20px;
 }
-.input-text {
+.tasks__input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -83,12 +84,12 @@ button:hover {
   font-family: lato, sans-serif;
   color: #888;
 }
-.input-text:focus {
+.tasks__input-text:focus {
   color: #333;
 }
 
 /* New Task */
-#new-task {
+.add-item-section__task {
   width: 318px;
 }
 
@@ -105,46 +106,44 @@ button:hover {
   vertical-align: middle;
 }
 
-.list-paragraph > .input-checkbox {
+.tasks__input-checkbox {
   margin: 0 10px;
 }
-.list-paragraph > .label-task {
+.tasks__label-task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.list-paragraph > .input-text {
+.tasks__input-text {
   width: 226px;
 }
-.button-delete-img {
+.tasks__button-delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.button-delete-img:hover {
+.tasks__button-delete-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .label-task {
+.completed-tasks .tasks__label-task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-#incomplete-tasks .list-paragraph .input-text,
-#completed-tasks .list-paragraph .input-text {
+.tasks__input-text,
+.tasks__input-text {
   display: none;
 }
 
-#incomplete-tasks .list-paragraph.edit-mode .input-text,
-#completed-tasks .list-paragraph.edit-mode .input-text {
+.edit-mode .tasks__input-text {
   display: inline-block;
   width: 224px;
 }
 
-#incomplete-tasks .list-paragraph.edit-mode .label-task,
-#completed-tasks .list-paragraph.edit-mode .label-task {
+.edit-mode .tasks__label-task {
   display: none;
 }
